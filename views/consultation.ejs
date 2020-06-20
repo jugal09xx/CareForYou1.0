@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<h1 class="display-4">
+		Consultation History
+	</h1>
+	<div class="col justify-items-start">
+		<% doctors.forEach(function(doctor){ %>
+		<div class="doctor card" style="width:70%;">
+			<p class="card-header">Consultation for Jugal Lad</p>
+			<div class="card-body">
+				<img class="rounded-float-left" style="border-radius: 60px; border: 1px solid grey" src="https://imagesx.practo.com/providers/50048ef5-					448b-471c-b0db-92fb99718727.jpg?i_type=t_100x100">
+				<h4 class="card-title"><%= doctor.name %></h4>
+				<div class="card-text text-muted">
+					<p>27/05/2020</p>
+					<p>Friday</p>
+				</div>
+				<a class="btn btn-outline-primary" href="/prescriptions">View Prescription</a>
+				<a class="btn btn-outline-info" href="/medhistory">View Medication</a>
+			</div>	
+		</div>			
+		<% }) %>
+		</div>
+</div>
+
+<%- include("partials/footer") %>

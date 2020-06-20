@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<div class="container-fluid">
+		<h1 class="display-4">Available Doctors</h1>
+		<div class="col justify-items-start">
+		<% doctors.forEach(function(doctor){ %>
+		<div class="doctor card" style="width:70%;">
+			<p class="card-header">Online</p>
+			<div class="card-body">
+				<img class="rounded-float-left" style="border-radius: 60px; border: 1px solid grey" src="https://imagesx.practo.com/providers/50048ef5-					448b-471c-b0db-92fb99718727.jpg?i_type=t_100x100">
+				<h4 class="card-title"><%= doctor.name %></h4>
+				<div class="card-text text-muted">
+					<p><%= doctor.type %></p>
+					<p><%= doctor.city %></p>
+				</div>
+				<button class="btn btn-outline-primary">Consult Now</button>
+				<button class="btn btn-outline-info">Book Appointment</button>
+				<button class="btn btn-outline-success">Contact Clinic</button>
+			</div>	
+		</div>			
+		<% }) %>
+		</div>
+	</div>
+</div>
+<%- include("partials/footer") %>

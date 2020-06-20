@@ -1,0 +1,43 @@
+body{
+	background: white;
+}
+.cfyheader{
+	color:white;
+	padding-top: 5%;
+}
+.infocard{
+	height: 400px;
+	margin: 30px 10px;
+}
+.img-fluid{
+	height: 200px;
+	width: auto;
+}
+.card-img-top{
+	height: 200px;
+	width: auto;
+}
+.footer{
+	color:white;
+}
+.doctor{
+	margin-top:5%;
+	border: 1px solid grey;
+}
+.jumbotron{
+	background: white;
+	border: 1px solid grey;
+	border-radius: 20px;
+}
+.med{
+	margin-top:5%;
+}
+.pres{
+	margin-top:5%;
+}
+.appoint{
+	margin-top:5%;
+}
+.container-cfy{
+	padding-bottom: 5%;
+}
